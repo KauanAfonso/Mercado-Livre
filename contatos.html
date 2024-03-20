@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <img class="logo" src="merc.png" alt="imagem do logo">
+
+            <div class="navEsquerda">
+                <img src="localizacao.png" alt="" width="30px" height="30px">
+                <a href=""> Informe seu <br>Cep</a>
+            </div>
+
+            <button id="btn-menu-humburguer" onclick="dispararMenu('menu-humburguer')">☰</button>
+
+            <div id="menu-humburguer">
+                <div class="header-menu">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5987/5987462.png" alt="">
+                    <div class="texto-menu">
+                        <p>Kauan Afonso da Silva</p>
+                        <p>Meu perfil</p>
+                    </div>
+                </div>
+
+                <div class="nav">
+                    <a href=""><i class="fa fa-home" style="font-size:24px"></i> Categorias</a>
+                    <a href=""><span style='font-size:24px;'>&#9873;</span>Ofertas</a>
+                    <a href=""><span style='font-size:24px;'>&#9742;</span> Vender</a>
+                    <a href="contatos.html"><i class="fa fa-heart" style="font-size: 22px;"></i>Contato</a>
+                    <a href=""><span style='font-size:24px;'>&#9728;</span>Crie sua conta</a>
+                    <a href=""><span style='font-size:24px;'>&#9983;</span>Entre</a>
+                    <a href=""><span style='font-size:24px;'>&#9951;</span> Compras</a>
+                    <a href="myCart.php"><span style='font-size:24px;'>&#9729;</span> Carrinho</a>
+                </div>
+
+                <span style='font-size:100px;'>&#9924;</span>
+
+                <button id="fecharMenu" onclick="dispararMenu('menu-humburguer')">
+                    &#10006;</button>
+
+            </div>
+
+            <div class="input">
+                <input type="search" placeholder="Buscar mais Produtos, marcas ee muito mais">
+            </div>
+
+
+
+            <div class="meioNav">
+                <a href="">Categorias</a>
+                <a href="">Ofertas</a>
+                <a href="">Vender</a>
+                <a href="contatos.html">Contato</a>
+            </div>
+
+            <div class="direitaNav">
+                <a href="">Crie sua conta</a>
+                <a href="">Entre</a>
+                <a href="myCart.php">Carrinho</a>
+            </div>
+
+
+        </nav>
+
+    </header>
+    <main>
+
+        <h1>Entre em Contato</h1>
+
+
+        <form action="#" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+
+
+        <div class="contact-info">
+            <p><strong>Endereço:</strong> Rua Exemplo, 123</p>
+            <p><strong>Email:</strong> exemplo@email.com</p>
+            <p><strong>Telefone:</strong> (XX) 1234-5678</p>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div>
+            <a href="">Trabalhe conosco</a>
+            <a href="contatos.html">Contato</a>
+            <a href="">Acessibilidade</a>
+            <a href="">informações sobre seguro</a>
+            <a class="linkParaCel" href="myCard.php">Carrinho</a>
+            <a class="linkParaCel" href="">Entre</a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

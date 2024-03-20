@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+.nav {
+    border-bottom: solid 2px rgb(159, 159, 159);
+    margin: 0px 10px;
+}
+
+header {
+    background-color: rgba(255, 240, 80, 0.963);
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 3px yellow;
+
+
+
+}
+
+header , footer a {
+    text-decoration: none !important;
+ 
+}
+
+.logo {
+    display: flex;
+    text-align: left;
+    margin-left: 180px;
+
+}
+
+.header-menu {
+    background-color: rgb(255, 240, 80);
+    width: 100%;
+    display: flex;
+}
+
+.texto-menu {
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 0.2;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.header-menu img {
+    width: 80px;
+}
+
+#meuCarrinho {
+    display: block;
+    background-color: #a8a8a8;
+    height: 200%;
+    z-index: 2;
+}
+
+#fecharMenu {
+    border: none;
+}
+
+#btn-menu-humburguer {
+    display: none;
+}
+
+header button {
+    background: transparent;
+    font-size: 35px;
+}
+
+#menu-humburguer {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    top: 0px;
+    width: 40%;
+    height: 120%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    transition: 0.9s;
+}
+
+#menu-humburguer a {
+    padding: 10px;
+    width: 100%;
+    color: rgb(42, 42, 42) !important;
+
+}
+
+#menu-humburguer a:active {
+    color: rgb(18, 142, 204) !important;
+}
+
+.nav {
+    border-bottom: solid 2px rgb(159, 159, 159);
+    margin: 0px 10px;
+}
+
+header {
+    background-color: rgba(255, 240, 80, 0.963);
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 3px yellow;
+
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    text-align: left;
+    margin-left: 180px;
+
+}
+
+.navEsquerda {
+    margin-top: 10px;
+    display: flex;
+    text-align: left;
+    margin-left: 180px;
+
+}
+
+.input {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    left: 30%;
+    top: 5%;
+
+
+}
+
+.input input {
+    width: 40em;
+    padding: 10px;
+
+}
+
+
+
+.meioNav {
+    display: inline-flex;
+    gap: 10px;
+    margin-left: 170%;
+}
+
+.direitaNav {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    gap: 10px;
+    margin-right: -40px;
+    position: absolute;
+    top: 60px;
+    right: 100px;
+
+
+}
+
+footer {
+    border: #000 solid 2px;
+    margin-top: 50px;
+    padding: 40px;
+    width: 100%;
+    background: rgba(255, 237, 34, 0.73);
+
+}
+
+.linkParaCel {
+    display: none;
+}
+
+
+footer a {
+    display: inline;
+    padding: 10px;
+    margin-left: 180px;
+}
+
+
+@media(max-width: 740px) {
+
+
+
+    #btn-menu-humburguer {
+        display: flex !important;
+        flex-direction: column;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    header {
+        margin-bottom: 40px;
+
+    }
+
+
+    .logo {
+        display: none;
+
+    }
+
+    .navEsquerda {
+        display: none;
+    }
+
+    .input {
+
+        left: 12%;
+        top: 2%;
+
+    }
+
+    .input input {
+        width: 18em;
+        padding: 10px;
+        margin-left: 20px;
+        border-radius: 40px;
+
+    }
+
+
+
+    .meioNav {
+        display: none;
+    }
+
+    .direitaNav {
+        display: none;
+
+
+    }
+
+
+
+    footer a,
+    .linkParaCel {
+        display: block;
+        padding: 10px;
+        margin-left: 40px;
+    }
+
+}
